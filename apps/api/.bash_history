@@ -14,3 +14,21 @@ php artisan migrate
 php artisan migrate
 php artisan db:seed CategorySeeder
 exit
+php artisan db:seed --class=CustomerSeeder
+git add .
+#git commit -m"cria
+exit
+php artisan db:seed CategorySeeder
+docker exec -it poo_web_php php artisan db:seed
+php artisan db:seed
+php artisan db:seed
+php artisan test
+bash
+exit
+php artisan db:seed
+php artisan db:seed CustomersSeeder
+php artisan migrate:fresh
+php artisan db:seed CustomerSeeder
+php artisan migrate:fresh
+php artisan db:seed CustomerSeeder
+exit
