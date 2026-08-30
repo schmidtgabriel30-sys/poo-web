@@ -32,3 +32,12 @@ php artisan db:seed CustomerSeeder
 php artisan migrate:fresh
 php artisan db:seed CustomerSeeder
 exit
+cd apps/api
+php artisan install:api
+php artisan make:controller CategoryController --api --pest
+git ad.
+git add.
+git add .
+git commit -m
+git commit -m"tarefa depois"
+exit

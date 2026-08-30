@@ -1,0 +1,31 @@
+@baseUri = http://localhost:8182/api
+
+### Index (Listar todas as categorias)
+GET {{baseUri}}/categories HTTP/1.1
+content-type: application/json
+
+### Store (Criar nova categoria)
+POST {{baseUri}}/categories HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Categoria Nova",
+    "description": "Categoria criada via API/REST"
+}
+
+### Show (Buscar uma categoria específica)
+GET {{baseUri}}/categories/1 HTTP/1.1
+content-type: application/json
+
+### Update (Atualizar uma categoria)
+PUT {{baseUri}}/categories/1 HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Categoria Alterada",
+    "description": "Categoria ATUALIZADA via API/REST"
+}
+
+### Delete (Excluir uma categoria)
+DELETE {{baseUri}}/categories/1 HTTP/1.1
+content-type: application/json
