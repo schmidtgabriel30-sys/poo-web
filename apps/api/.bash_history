@@ -41,3 +41,7 @@ git add .
 git commit -m
 git commit -m"tarefa depois"
 exit
+php artisan make:request CategoryStoreRequest
+git add.
+git add .
+exit
