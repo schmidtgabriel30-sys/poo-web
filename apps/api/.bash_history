@@ -45,3 +45,20 @@ php artisan make:request CategoryStoreRequest
 git add.
 git add .
 exit
+cd /var/www/html
+cd apps/api
+php artisan make:model Order -mfsc
+php artisan make:request ProductStoreRequest
+php artisan make:request ProductUpdateRequest
+#[Fillable(['name','price','category_id'])]
+php artisan make:request OrderStoreRequest
+php artisan make:request OrderUpdateRequest
+php artisan make:controller ProductController
+php artisan make:controller CustumerController
+php artisan make:request custumerStoreRequest
+php artisan make:request custumerUpdateRequest
+git add .
+git commit "order tarefa"
+git add . 
+git commit - m "tarefa order"
+exit
