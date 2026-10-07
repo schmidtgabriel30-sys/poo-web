@@ -1,0 +1,33 @@
+
+GET {{baseUri}}/categories HTTP/1.1
+content-type: application/json
+Authorization: Bearer {{accessToken}}
+
+
+###
+POST {{baseUri}}/orders HTTP/1.1
+Content-Type: application/json
+
+{
+    "customer_id": 16,
+    "total": 150.50,
+    "status": "pending",
+    "paid_at": null
+}
+
+###
+GET {{baseUri}}/orders/3 HTTP/1.1
+Content-Type: application/json
+
+###
+PUT {{baseUri}}/orders/2 HTTP/1.1
+Content-Type: application/json
+
+{
+    "status": "paid",
+    "paid_at": "2026-09-03 15:00:00"
+}
+
+###
+DELETE {{baseUri}}/orders/2 HTTP/1.1
+Content-Type: application/json

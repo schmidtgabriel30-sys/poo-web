@@ -1,0 +1,35 @@
+
+###index
+GET {{baseUri}}/categories HTTP/1.1
+content-type: application/json
+Authorization: Bearer {{accessToken}}
+
+###store
+POST {{baseUri}}/review HTTP/1.1
+Content-Type: application/json
+
+{
+    "product_id": 15,
+    "customer_id": 1,
+    "rating": 5,
+    "comment": "Produto muito bom, chegou rápido."
+}
+
+###
+GET {{baseUri}}/review/3 HTTP/1.1
+Content-Type: application/json
+
+###
+PUT {{baseUri}}/review/3 HTTP/1.1
+Content-Type: application/json
+
+{
+    "product_id": 1,
+    "customer_id": 1,
+    "rating": 3,
+    "comment": "Review ATUALIZADA via API/REST"
+}
+
+###
+DELETE {{baseUri}}/review/3 HTTP/1.1
+Content-Type: application/json
