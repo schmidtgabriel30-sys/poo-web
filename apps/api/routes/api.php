@@ -6,6 +6,9 @@ use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\ReviewController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UploadController;
+
+
 
 Route::post('auth/login', [AuthController::class, 'login']);
 
@@ -18,5 +21,7 @@ Route::group([
     Route::apiResource('customers', CustomerController::class);
     Route::apiResource('review', ReviewController::class);
     Route::apiResource('orders', OrderController::class);
+    Route::post('/upload', [UploadController::class, 'upload']);
 });
+
 
